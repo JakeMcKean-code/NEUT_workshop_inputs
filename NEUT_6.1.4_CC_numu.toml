@@ -24,7 +24,7 @@ direction_type = "fixed" # probe approaches target along [0.0, 0.0, 1.0]
 direction = [0.0, 0.0, 1.0]
 
 energy_spectrum_type = "root"
-energy_histogram = [ "fluxes/t2kflux_2016_plus250kA.root", "enu_nd280_numu", "gev"]
+energy_histogram = [ "flux/t2kflux_2016_plus250kA.root", "enu_nd280_numu", "gev"]
 
 [neut.target]
 # example for carbon
