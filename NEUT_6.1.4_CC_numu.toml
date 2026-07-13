@@ -24,7 +24,7 @@ direction_type = "fixed" # probe approaches target along [0.0, 0.0, 1.0]
 direction = [0.0, 0.0, 1.0]
 
 energy_spectrum_type = "root"
-energy_histogram = [ "t2kflux_2016_plus250kA.root", "enu_nd280_numu", "gev"]
+energy_histogram = [ "fluxes/t2kflux_2016_plus250kA.root", "enu_nd280_numu", "gev"]
 
 [neut.target]
 # example for carbon
@@ -113,8 +113,8 @@ mode_choice_type = "normal" # choose according to nominal cross-section predicti
 
 
 [neut.interaction_model.QE]
-model = "nieves" # Nieves et. al LFG model
-#model = "rome" # Benhar SF
+#model = "nieves" # Nieves et. al LFG model
+model = "rome" # Benhar SF
 
 [neut.interaction_model.QE.axial_form_factors]
 form = "dipole"
