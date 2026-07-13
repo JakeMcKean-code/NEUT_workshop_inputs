@@ -190,7 +190,7 @@ def quick_neut_analysis(input_file_name):
 
     print(f"[INFO]: Writing output file: {output_root_name}")
 
-    fout = ROOT.TFile.Open(output_root_name, "RECREATE")
+    fout = ROOT.TFile.Open(str(output_root_name), "RECREATE")
     draw_histograms(hist_vec, pdf_name)
 
     for hist in hist_vec:
