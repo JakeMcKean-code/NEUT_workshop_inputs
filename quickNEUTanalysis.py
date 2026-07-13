@@ -106,6 +106,7 @@ def get_particle_info_by_pdg(neutev):
 
 def draw_histograms(histograms, pdf_name):
     canvas = ROOT.TCanvas("canvas", "canvas", 800, 600)
+    pdf_name = str(pdf_name)
     canvas.Print(pdf_name + "[")
 
     for hist in histograms:
