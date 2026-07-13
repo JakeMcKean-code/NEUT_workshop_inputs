@@ -125,5 +125,5 @@ form = "dipole"
 
 # Axial mass for dipole form factor
 [neut.interaction_model.QE.axial_form_factors.dipole]
-axial_mass = 1.05
+axial_mass = 1.03
 nc_axial_mass = 1.21
