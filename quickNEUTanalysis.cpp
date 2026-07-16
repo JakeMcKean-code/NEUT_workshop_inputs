@@ -3,7 +3,6 @@
 #include "neutvtx.h"
 
 #include <vector>
-#include <filesystem>
 
 #include "TFile.h"
 #include "TTree.h"
@@ -198,8 +197,8 @@ void quickNEUTanalysis(const char* inputFileName){
   gStyle->SetOptStat(0);
 
   // Get output filename from stem of input filename (remove .root from input)
-  std::filesystem::path inputPath(inputFileName);
-  std::string stem = inputPath.stem().string();
+  std::string inputFileNameStr = inputFileName;
+  std::string stem = inputFileNameStr.substr(0, inputFileNameStr.find_last_of('.'));
   std::string outputRootName = stem + "_analysed_cpp.root";
   std::string pdfName        = stem + "_analysed_cpp.pdf";
 
